@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: $font-family;
+  letter-spacing: 0.03em;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 0;
+  padding-bottom: 94px;
+  & .link {
+    text-decoration: none;
+  }
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  &.our-team {
+    padding-top: 94px;
+  }
+}

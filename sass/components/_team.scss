@@ -1,0 +1,79 @@
+.section-team {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-section {
+  background-color: $primary-bg-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.name {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.team {
+  display: flex;
+  justify-content: center;
+
+  & .name {
+    color: $title-text-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  & .profession {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  & .item {
+    background: $primary-white-color;
+
+    box-shadow: $b-shadow;
+    border-radius: 0px 0px 4px 4px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+
+  & .link {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: #afb1b8;
+    transition: $cubic, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    & :hover,
+    & :focus {
+      background-color: $accent-color;
+      color: $primary-white-color;
+    }
+  }
+}
+.social-list-icon {
+  fill: currentColor;
+}
+.social-list li {
+  margin-bottom: 24px;
+}
+.foto {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
